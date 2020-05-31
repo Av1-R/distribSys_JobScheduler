@@ -81,7 +81,7 @@ class Client:
             elif args.a == "wf":
                 self.serverStrategy = worstfit.WorstFit()
         else:
-            self.serverStrategy = biggestserver.BiggestServer()
+            self.serverStrategy = costFit.costFit()
 
 
     def run(self):
